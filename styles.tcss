@@ -1,0 +1,124 @@
+$v_background: #f9dbe7;
+$v_panel: #fff1f6;
+$v_text: #3d0b1f;
+$v_accent: #b20f4a;
+$v_soft: #ffe0ec;
+$v_board: #ffd0df;
+
+Screen {
+    background: $v_background;
+    color: $v_text;
+    text-style: bold;
+}
+
+#layout {
+    height: 100%;
+    align: center middle;
+}
+
+#panel {
+    width: 70;
+    padding: 1 2;
+    background: $v_panel;
+}
+
+#title {
+    color: $v_accent;
+    background: $v_soft;
+    content-align: center middle;
+    margin-bottom: 1;
+    height: 5;
+}
+
+#score {
+    height: 4;
+    content-align: center middle;
+    background: $v_soft;
+    color: $v_accent;
+    margin-bottom: 1;
+}
+
+#board {
+    grid-size: 4 4;
+    grid-rows: 1fr 1fr 1fr 1fr;
+    grid-columns: 1fr 1fr 1fr 1fr;
+    grid-gutter: 1 1;
+    background: $v_board;
+    padding: 1;
+}
+
+Tile {
+    height: 5;
+    content-align: center middle;
+    text-style: bold;
+    background: #ffe9f1;
+    color: #6b1235;
+}
+
+Tile.v0 { background: #ffe9f1; color: #ffe9f1; }
+Tile.v2 { background: #ffe0ec; color: #6b1235; }
+Tile.v4 { background: #ffd4e5; color: #6b1235; }
+Tile.v8 { background: #ffbfd6; color: #5a0f2c; }
+Tile.v16 { background: #ffabc8; color: #510f28; }
+Tile.v32 { background: #ff97ba; color: #4a0f24; }
+Tile.v64 { background: #ff84ad; color: #3f0c1f; }
+Tile.v128 { background: #ff6f9e; color: #3f0c1f; }
+Tile.v256 { background: #ff5b90; color: #3f0c1f; }
+Tile.v512 { background: #ff477f; color: #fff5f8; }
+Tile.v1024 { background: #f53370; color: #fff5f8; }
+Tile.v2048 { background: #e11f63; color: #fff5f8; }
+
+#status {
+    height: 4;
+    content-align: center middle;
+    margin-top: 1;
+    background: $v_soft;
+    color: $v_accent;
+}
+
+.valentine-modal {
+    align: center middle;
+}
+
+#dialog {
+    width: 60;
+    padding: 2 3;
+    background: $v_soft;
+}
+
+#heart {
+    height: 9;
+    content-align: center middle;
+    color: $v_accent;
+}
+
+#valentine-title {
+    height: 5;
+    content-align: center middle;
+    text-style: bold;
+    color: $v_accent;
+    background: $v_board;
+    margin-bottom: 1;
+}
+
+#valentine-buttons {
+    height: 4;
+    content-align: center middle;
+    margin-top: 1;
+}
+
+#dialog Button {
+    margin: 0 1;
+    background: #ff6f9e;
+    color: #fff5f8;
+}
+
+Button {
+    width: 1fr;
+}
+
+.fill-text {
+    height: 100%;
+    content-align: center middle;
+    text-style: bold;
+}
